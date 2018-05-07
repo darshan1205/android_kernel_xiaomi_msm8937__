@@ -17,4 +17,17 @@
 			};
 		};
 	};
+        qcom,pmi8950@3 {
+                flash_led: qcom,leds@d300 {
+                        pmi8950_torch2: qcom,torch_2 {
+                                label = "torch";
+				qcom,led-name = "flashlight";
+				qcom,default-led-trigger =
+						"torch2_trigger";
+				qcom,max-current = <200>;
+				qcom,id = <1>;
+				qcom,current = <100>;
+			};
+		};
+	};
 };
